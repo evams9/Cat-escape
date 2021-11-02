@@ -1,4 +1,4 @@
-# Cat-escape
+# Cat-escape 😼
 
 ## Description:
 The objective of this game is to get the highest score possible. The player's score increases as he moves through the screen without hitting any obstacles. Extra score can be obtained by catching the objects that will appear on the screen. 
