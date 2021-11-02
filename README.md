@@ -11,7 +11,7 @@ The objective of this game is to get the highest score possible. The player's sc
 
 ## Backlog / nice to have:
 
-?????????
+- Another element appears in the sky and can take away our score. (Ex: a cloud that shoots lightning). 
 
 ## Data structure:
 class Player {
