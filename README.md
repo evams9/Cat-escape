@@ -7,11 +7,11 @@ The objective of this game is to get the highest score possible. The player's sc
 
 - Player: cat (green).
 - Obstacles: vacuum cleaner, fireworks (red).
-- Objects to score extra points: fish, mouse. (blue).
 
 ## Backlog / nice to have:
 
-- Another element appears in the sky and can take away our score. (Ex: a cloud that shoots lightning). 
+- Another element appears in the sky and can take away our score. (Ex: a cloud that shoots lightning). (black).
+- Objects to score extra points: fish, mouse. (blue). 
 
 ## Data structure:
 class Player {
