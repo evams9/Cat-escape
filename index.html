@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat escape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro" class="container splash">
+  <button id="start"> START </button>
+  <div class="instructions">Press space for jump!</div>
+</div>
+
+<div id="game" class="container hide">
+<canvas id="cat-escape" width="500" height="500"></canvas>
+</div>
+
+<div id="gameover" class="container hide">
+<div id="gameover">Game Over</div>
+</div>
+
+<script src="obstacle.js"></script>
+<script src="player.js"></script>
+<script src="game.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+
+<!--  <div id="game" class="container">
+      <canvas id="snake-canvas" width="500" height="500"></canvas>
+      <button id="start">start</button>
+    </div> -->
+
+</html>
