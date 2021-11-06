@@ -1,5 +1,5 @@
 class Obstacle{
-    constructor(x, y, height = 15,width = 5 ,color = "red"){
+    constructor(x, y, height = 70,width = 30 ,color = "red"){
        this.x = x; 
        this.y = y;
        this.height = height;

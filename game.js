@@ -10,7 +10,10 @@ class Game{
         this.ctx.fillRect(this.player.x, this.player.y, th)
     }
 
-    //_DRAWobstacle()
+    _drawobstacle(){
+        this.ctx.fillStyle(this.obstacle.color);
+        this.ctx.fillRect(this.obstacle.x, this.obstacle.y, th)
+    }
 
     //_moveObstacle(){
         // setInterval
@@ -26,6 +29,7 @@ class Game{
 
     _renderGame(){
      window.requestAnimationFrame(this._renderFrameGame.bind(this));
+     console.log ("render");
     }
 
     start(){
