@@ -4,16 +4,14 @@ window.addEventListener("load", function () {
   function generateGame() {
     let canvas = document.getElementById("cat-escape");
     const ctx = canvas.getContext("2d");
-
     const catGame = new Game(ctx);
-
     catGame.start();
   }
 
   function showCanvas(){
-    document.getElementById("intro").classList.add = "hide";
-    document.getElementById("game").classList.remove = "hide";
-    document.getElementById("game").classList.add = "show";
+    document.getElementById("intro").classList.add("hide");
+    document.getElementById("game").classList.remove("hide");
+    document.getElementById("game").classList.add("show");
     generateGame();
   }
 

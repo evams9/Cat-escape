@@ -2,44 +2,50 @@ class Game{
     constructor(ctx){
         this.ctx = ctx;
         this.player = new Player(30, 400, 100, 100, "green");
-        this.obstacle = new Obstacle(1300,400, 200, 200, "red");
+        this.obstacle = new Obstacle(1300, 400, 200, 50, "red");
     }
 
     _drawPlayer(){
-        this.ctx.fillStyle(this.player.color);
-        this.ctx.fillRect(this.player.x, this.player.y, th)
+        this.ctx.fillStyle = this.player.color;
+        this.ctx.fillRect(this.player.x, this.player.y, this.player.width, this.player.height);
     }
 
-    _drawobstacle(){
-        this.ctx.fillStyle(this.obstacle.color);
-        this.ctx.fillRect(this.obstacle.x, this.obstacle.y, th)
+    _drawObstacle(){
+        this.ctx.fillStyle = this.obstacle.color;
+        this.ctx.fillRect(this.obstacle.x, this.obstacle.y, this.obstacle.width, this.obstacle.height);
     }
 
-    //_moveObstacle(){
-        // setInterval
-        // setTimeOut
-        // this.obstacle.x = this.obstacle.x - is5;
-    //}
+    _moveObstacles(){
+        this.obstacle._moveLeft();
+    }
 
-    //_assignarControles(){
-    
-        // tecla espacio 
-        // this.player.jump()
-    //}
+    _assignControls(){
+        document.addEventListener("keydown", (event) => {
+            switch (event.code) {
+            case "Space":
+                this.player.jump();
+                break;
+            default:
+                break;
+            }
+        });
+    }
 
     _renderGame(){
-     window.requestAnimationFrame(this._renderFrameGame.bind(this));
      console.log ("render");
+     this._drawPlayer();
+     this._drawObstacle();
+     this._moveObstacles();
+     window.requestAnimationFrame(this._renderGame.bind(this));
     }
 
     start(){
-       // this._drawPlayer()
-        //this._DRAWobstacle()
-       // this._assignarControles()
+        this._drawPlayer()
+      // this._drawobstacle()
+        this._assignControls()
         console.log("start");
-        window.requestAnimationFrame(this._renderFrameGame.bind(this));
-        //this._moveObstacle()
+        window.requestAnimationFrame(this._renderGame.bind(this));
+      //  this._moveObstacle()
         
-        // window request animation frame
     }
 }

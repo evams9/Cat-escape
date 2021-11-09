@@ -1,14 +1,21 @@
 class Player{
-    constructor(x = 20, y = 100, width = 50, height = 50, color = "green", ctx){
+    constructor(x, y, width, height, color){
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
         this.color = color;
-        this.ctx = ctx;
     }
 
     jump(){
-        // resta a this.y = this.y - 3;
-    }
+        
+        let position = 0
+        let timerId = setInterval(function(){
+        console.log("salto");
+        position += 10; 
+        this.y = this.y - 3;
+        }
+     )}
+
+     
 }
