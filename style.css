@@ -49,3 +49,13 @@ canvas#cat-canvas {
     margin: 0 auto;
     border: 1px solid black;
   }
+
+  #gameover{
+    /*display:flex;*/
+    width: 1000px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: monospace;
+  }

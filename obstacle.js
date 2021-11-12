@@ -5,34 +5,20 @@ class Obstacle{
        this.height = height;
        this.width = width;
        this.color = color;
-       this.interval;
+        this.speed = 5;
+       //this.interval;
 
     }
 
     _moveLeft(){
-        this.interval = setInterval(() => {
-            this.x -= 3;
-        }, -1);
+        setInterval(() => {
+            this.x = this.x - this.speed;
+        },100);
+     }
 
-       
-        }
-
-       //  _clean() {
-            //this.ctx.fillStyle = 'white';
-            //this.ctx.fillRect 
-            //this.ctx.clearRect(10, 0, 200, 50);}
-       
-       //if (this.x = -1)
-       
-       
-       // this.interval = setInterval((obstacle) => this.x, 1000);
-
-        
-    //    if (this.x.frames % 120 === 0) {}
-
-       // if this.x = -1 
-        
-        
-        // restar a la x
+     _faster(){
+        // setInterval cada 5 segundos
+         this.speed++;
+     }
     
 }
