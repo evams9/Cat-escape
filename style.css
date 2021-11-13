@@ -1,4 +1,5 @@
 
+
 .splash{
  margin: 0px;
  padding: 0px;
@@ -48,6 +49,12 @@ display:none;
 canvas#cat-canvas {
     margin: 0 auto;
     border: 1px solid black;
+    
+  }
+
+  #game{    
+    background-image: url("./img/liso.jpg");
+    width: 1000px;
   }
 
   #gameover{

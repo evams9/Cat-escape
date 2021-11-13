@@ -1,7 +1,7 @@
 class Game{
     constructor(ctx){
         this.ctx = ctx;
-        this.player = new Player(150, 400, 30, 100, "green");
+        this.player = new Player(150, 400, 50, 50, "black");
         this.obstacles = [];
         this.points = 0;
         this.pointInterval;
@@ -11,7 +11,19 @@ class Game{
     _drawPlayer(){
         this.ctx.fillStyle = this.player.color;
         this.ctx.fillRect(this.player.x, this.player.y, this.player.width, this.player.height);
+       /* this.ctx.drawImage(
+        playerSprite.sprite,
+        playerSprite.x,
+        playerSprite.y,
+        playerSprite.width,
+        playerSprite.height,
+        this.player.x,
+        this.player.y,
+        this.player.width,
+        this.player.height
+      );*/
     }
+    
 
     _drawObstacle(obstacle){
         this.ctx.fillStyle = obstacle.color;
@@ -25,7 +37,7 @@ class Game{
 
     _generateObstacles(){
         setInterval(() => {
-            const obstacle = new Obstacle(this._generateRandom(1000,1100), 450, 200, 50, "red");
+            const obstacle = new Obstacle(this._generateRandom(1000,1100), 400, 50, 50, "red");
             console.log(obstacle)
             this.obstacles.push(obstacle);
         }, 2000)

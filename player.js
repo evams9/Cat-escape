@@ -17,7 +17,7 @@ class Player{
         this.y = this.y - 5; // Puja cap a dalt
         if (this.y === 150){ // Poso un tope, aquí para de saltar
         clearInterval(jumpInterval);
-        console.log("Dinosaur on Y: 5, can't go any further");
+        console.log();
         goingDownInterval = setInterval(function(){
           this.y = this.y + 5 ; // Torna cap a baix
             if (this.y === 400){ // Quan arribis al punt d'inici, para
